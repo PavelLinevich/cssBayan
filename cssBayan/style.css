@@ -1,0 +1,74 @@
+body {
+    font-size: 2vh;
+    font-weight: 900;
+    line-height: 1.5;
+    background-color: #f5f5eb;
+}
+
+.wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+    min-width: 20em;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.mem-input {
+    cursor: pointer;
+    appearance: none;
+}
+
+.mem-title {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.mem-text {
+    cursor: pointer;
+    border-top: 0.1rem solid #dee2e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    color: #2b60cf;
+    margin: 0;
+}
+
+.img__plus {
+    width: 0;
+    height: 0;
+    transition: .3s;
+}
+
+.main:hover .mem-title>.mem-text h3 {
+    color: #000000;
+    transition: 1s;
+}
+
+.main:hover .mem-title>.mem-text>.img__plus {
+    width: .5em;
+    height: .5em;
+}
+
+#mem_1:checked~.mem-title>.mem-text>.text-1,
+#mem_2:checked~.mem-title>.mem-text>.text-2,
+#mem_3:checked~.mem-title>.mem-text>.text-3,
+#mem_4:checked~.mem-title>.mem-text>.text-4,
+#mem_5:checked~.mem-title>.mem-text>.text-5 {
+    color: #000000;
+}
+
+#mem_1:checked~.mem-title>.mem-text>.image-plus-1,
+#mem_2:checked~.mem-title>.mem-text>.image-plus-2,
+#mem_3:checked~.mem-title>.mem-text>.image-plus-3,
+#mem_4:checked~.mem-title>.mem-text>.image-plus-4,
+#mem_5:checked~.mem-title>.mem-text>.image-plus-5 {
+    transform: rotate(45deg);
+	transition: .3s;
+}
