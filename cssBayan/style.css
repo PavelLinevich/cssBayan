@@ -53,6 +53,11 @@ h3 {
     transition: 1s;
 }
 
+.footer {
+    text-align: center;
+    padding-top: 3vh;
+}
+
 .main:hover .mem-title>.mem-text h3 {
     color: #000000;
     transition: 1s;
@@ -65,7 +70,7 @@ h3 {
 
 .mem-title:hover>.mem__image {
     width: 20%;
-    transition: 1s;
+	transition: 1s;
 }
 
 #mem_1:checked~.mem-title>.mem-text>.text-1,
@@ -82,7 +87,7 @@ h3 {
 #mem_4:checked~.mem-title>.mem-text~.mem-image-4,
 #mem_5:checked~.mem-title>.mem-text~.mem-image-5 {
     width: 20%;
-    transition: 1s;
+	transition: 1s;
 }
 
 #mem_1:checked~.mem-title>.mem-text>.image-plus-1,
@@ -91,5 +96,5 @@ h3 {
 #mem_4:checked~.mem-title>.mem-text>.image-plus-4,
 #mem_5:checked~.mem-title>.mem-text>.image-plus-5 {
     transform: rotate(45deg);
-    transition: .3s;
+	transition: .3s;
 }
