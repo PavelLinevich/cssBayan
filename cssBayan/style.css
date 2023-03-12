@@ -74,7 +74,12 @@ h3 {
 }
 
 .mem-title:active {
-    opacity: 50%;
+    opacity: 70%;
+}
+
+.main .mem-title:active>.mem-text>h3{
+    color: #2b60cf;
+    transition: .1s;
 }
 
 #mem_1:checked~.mem-title>.mem-text>.text-1,
