@@ -73,6 +73,10 @@ h3 {
 	transition: 1s;
 }
 
+.mem-title:active {
+    opacity: 50%;
+}
+
 #mem_1:checked~.mem-title>.mem-text>.text-1,
 #mem_2:checked~.mem-title>.mem-text>.text-2,
 #mem_3:checked~.mem-title>.mem-text>.text-3,
